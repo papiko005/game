@@ -45,15 +45,15 @@ class Game(object):
         # プレイヤーを初期化
         self.player = Player(32,128,"img/Runman.png")
         
-        # 水平ブロック
+        # 水平ブロック(なし)
         self.horizontal_blocks = pygame.sprite.Group()
-        # 垂直方向のブロック
+        # 垂直方向のブロック(なし)
         self.vertical_blocks = pygame.sprite.Group()
 
-        # ドットのグループ
+        # ドットのグループ(なし)
         self.dots_group = pygame.sprite.Group()
 
-        # ブロックの描画
+        # ブロックの描画(なし)
         for i,row in enumerate(enviroment()):
             for j,item in enumerate(row):
                 if item == 1:
@@ -199,11 +199,11 @@ class Game(object):
             else:
                 self.menu.display_frame(screen)
         else:
-            # 水平方向のブロックを描画
+            # 水平方向のブロックを描画(なし)
             self.horizontal_blocks.draw(screen)
-            # 垂直方向のブロックを描画
+            # 垂直方向のブロックを描画(なし)
             self.vertical_blocks.draw(screen)
-            # ドットを描画
+            # ドットを描画(なし)
             self.dots_group.draw(screen)
             # 敵を描画
             self.enemies.draw(screen)
