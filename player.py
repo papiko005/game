@@ -131,25 +131,25 @@ class Player(pygame.sprite.Sprite):
         self.change_y = 3
 
     def stop_move_right(self):
-        # 移動が停止したら、デフォルトのプレイヤーの画像を設定
+        # 移動が停止したら、デフォルトのプレイヤーの画像を設定(なし)
         if self.change_x != 0:
             self.image = self. Runman_image
         self.change_x = 0
 
     def stop_move_left(self):
-        # 移動が停止したら、水平反転したプレイヤーの画像を設定
+        # 移動が停止したら、水平反転したプレイヤーの画像を設定(なし)
         if self.change_x != 0:
             self.image = pygame.transform.flip(self. Runman_image,True,False)
         self.change_x = 0
 
     def stop_move_up(self):
-        # 移動が停止したら、デフォルトのプレイヤーの画像を設定
+        # 移動が停止したら、デフォルトのプレイヤーの画像を設定(なし)
         if self.change_y != 0:
             self.image = pygame.transform.flip(self. Runman_image,True,False)
         self.change_y = 0
 
     def stop_move_down(self):
-        # 移動が停止したら、デフォルトプレイヤーの画像を設定
+        # 移動が停止したら、デフォルトプレイヤーの画像を設定(なし)
         if self.change_y != 0:
             self.image = pygame.transform.flip(self.Runman_image,True,False)
         self.change_y = 0
